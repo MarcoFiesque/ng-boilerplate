@@ -1,59 +1,78 @@
-# NgBoilerplate
+# 🚀 Angular 19 Boilerplate
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+Starter Angular 19 avec :
+- ✅ Angular CLI
+- 🎨 Tailwind CSS 4
+- 📦 Angular Material
+- 🐳 Docker-ready
+- ♻️ GitHub template compatible
 
-## Development server
+---
 
-To start a local development server, run:
+## ⚙️ Prérequis
+
+- [Node.js](https://nodejs.org/) 20+
+- [Docker](https://www.docker.com/) (optionnel)
+
+---
+
+## 🚀 Démarrage
+
+### 🧪 Méthode 1 – Locale (classique)
 
 ```bash
+git clone https://github.com/marcofiesque/ng-boilerplate.git
+cd ng-boilerplate
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 🐳 Méthode 2 – Docker (isolée)
+git clone https://github.com/tonuser/ng-boilerplate.git
+cd ng-boilerplate
+docker build -t ng-boilerplate .
+docker run -p 4200:4200 ng-boilerplate
 
-## Code scaffolding
+### 📦 Contenu
+Angular CLI + Angular 19
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Tailwind CSS prêt à l'emploi (config purge ok)
+
+Angular Material installé et stylisé
+
+Dockerfile inclus pour usage rapide
+
+Compatible GitHub template (clonable en un clic)
+
+### 🧬 Créer un nouveau projet à partir du template
+👉 Use this template
+
+### 🛠 Roadmap
+ Ajouter un composant exemple (ButtonComponent)
+
+ Ajouter tests unitaires de base
+
+ Ajouter support PWA
+
+ Intégrer Storybook (optionnel)
+
+
+---
+
+## 🧨 Étape 3 – Activer le repo comme **GitHub Template**
+
+1. -> GitHub.com
+2. repo → Settings → Cocher ✅ **Template repository**
+
+Cloner depuis le bouton **« Use this template »**
+
+---
+
+## ✅ Pousser :
 
 ```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+git init
+git remote add origin git@github.com:tonuser/ng-boilerplate.git
+git add .
+git commit -m "Initial boilerplate Angular 19 + Tailwind + Material"
+git push -u origin main
